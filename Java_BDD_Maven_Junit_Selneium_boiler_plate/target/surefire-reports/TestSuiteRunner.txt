@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuiteRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 6.166 s <<< FAILURE! - in TestSuiteRunner
+Order a pillow by selecting credit card as the payment method #1(Buying a Pillow at midtrans)  Time elapsed: 2.21 s  <<< FAILURE!
+org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+
+Order a pillow by selecting credit card as the payment method #2(Buying a Pillow at midtrans)  Time elapsed: 1.172 s  <<< FAILURE!
+org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+
+TestSuiteRunner  Time elapsed: 1.28 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'Udays-Mac-mini', ip: '192.168.10.114', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.2.2', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/bf/rgk4mzbn2c9...}, goog:chromeOptions: {debuggerAddress: localhost:55330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at TestSuiteRunner.tearDown(TestSuiteRunner.java:56)
+

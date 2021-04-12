@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuiteRunner" time="6.166" tests="3" errors="1" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="browser.type" value="chrome"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Singapore"/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.1/libexec/conf"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="SG"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dbrowser.type=chrome -Dbrowser.chrome.path=/Users/udaykumar/Documents/Softwares/Drivers/chromedriver -Dbrowser.firefox.path=/Users/udaykumar/Documents/Softwares/Drivers/geckodriver"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.1/libexec"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/udaykumar"/>
+    <property name="user.language" value="en"/>
+    <property name="browser.chrome.path" value="/Users/udaykumar/Documents/Softwares/Drivers/chromedriver"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-03-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="16+14"/>
+    <property name="user.name" value="udaykumar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.2.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/bf/rgk4mzbn2c9494bdv5hl0xwr0000gn/T/"/>
+    <property name="java.version" value="16"/>
+    <property name="user.dir" value="/Users/udaykumar/Documents/Workspace/Java_Workspace/Java_BDD_Maven_Junit_Selneium_boiler_plate"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="browser.firefox.path" value="/Users/udaykumar/Documents/Softwares/Drivers/geckodriver"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/udaykumar/Documents/Workspace/Java_Workspace/Java_BDD_Maven_Junit_Selneium_boiler_plate"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/udaykumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="16+14"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.1/libexec/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.1/libexec/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="Order a pillow by selecting credit card as the payment method #1" classname="Buying a Pillow at midtrans" time="2.21">
+    <failure message="The title of the popup is not matching expected:&lt;[Shopping Cart  ]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+]]></failure>
+    <system-out><![CDATA[browser............................chrome
+
+@payment @credit-card
+Scenario Outline: Order a pillow by selecting credit card as the payment method # org/features/BuyPillow.feature:36
+  Given I want to open the midtrans webpage to buy a pillow                     # org.steps.StepDefinitions.i_want_to_open_the_midtrans_webpage_to_buy_a_pillow()
+  When I have clicked on the Buy now button from the home page                  # org.steps.StepDefinitions.i_have_clicked_on_the_buy_now_button_from_the_home_page()
+  Then a shopping cart screen is popped up                                      # org.steps.StepDefinitions.a_shopping_cart_screen_is_popped_up()
+      org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at util.BaseUtil.verifyText(BaseUtil.java:57)
+	at org.steps.StepDefinitions.a_shopping_cart_screen_is_popped_up(StepDefinitions.java:28)
+	at ✽.a shopping cart screen is popped up(classpath:org/features/BuyPillow.feature:7)
+
+  Then I have looked into the default amount of pillow                          # org.steps.StepDefinitions.i_have_looked_into_the_default_amount_of_pillow()
+  Then I have looked into Customer details sections                             # org.steps.StepDefinitions.i_have_looked_into_customer_details_sections()
+  And I have entered "Name" in the name textbox                                 # org.steps.StepDefinitions.i_have_entered_name(java.lang.String)
+  And I have entered "Email" in the email textbox                               # org.steps.StepDefinitions.i_have_entered_email(java.lang.String)
+  And I have entered "Phonenumber" in the phonenumber textbox                   # org.steps.StepDefinitions.i_have_entered_phone_no(java.lang.String)
+  And I have entered "City" in the city textbox                                 # org.steps.StepDefinitions.i_have_entered_city(java.lang.String)
+  And I have entered "Address" in the address textbox                           # org.steps.StepDefinitions.i_have_entered_address(java.lang.String)
+  And I hve entered "PostalCode" in the postalcode textbox                      # org.steps.StepDefinitions.i_hve_entered_postal_code(java.lang.String)
+  When I have clicked on Checkout button                                        # org.steps.StepDefinitions.i_have_clicked_on_checkout_button()
+  And I can see a order summary popup                                           # org.steps.StepDefinitions.i_can_see_a_order_summary_popup()
+  Then I can verify the order-id                                                # org.steps.StepDefinitions.i_can_verify_the_order_id()
+  Then I can verify order details                                               # org.steps.StepDefinitions.i_can_verify_order_details()
+  Then I can verify shipping details                                            # org.steps.StepDefinitions.i_can_verify_shipping_details()
+  When I have clicked on Continue button                                        # org.steps.StepDefinitions.i_have_clicked_on_continue_button()
+  Then I can see Select Payment popup                                           # org.steps.StepDefinitions.i_can_see_select_payment_popup()
+  When I have selected Credit/Debit card                                        # org.steps.StepDefinitions.i_have_selected_credit_debit_card()
+  Then I can verify the amount value                                            # org.steps.StepDefinitions.i_can_verify_the_amount_value()
+  Then I can verify the order-id                                                # org.steps.StepDefinitions.i_can_verify_the_order_id()
+  And I have entered "CardNumber" in the cardnumber textbox                     # org.steps.StepDefinitions.i_have_entered_card_number(java.lang.String)
+  And I have entered "ExpiryDate" in the expirydate textbox                     # org.steps.StepDefinitions.i_have_entered_expiry_date(java.lang.String)
+  And I have entered "Cvv" in the cvv textbox                                   # org.steps.StepDefinitions.i_have_entered_cvv_number(java.lang.String)
+  When I have clicked on Pay Now                                                # org.steps.StepDefinitions.i_have_clicked_on_pay_now()
+  Then I was redirected to OTP page                                             # org.steps.StepDefinitions.i_was_redirected_to_otp_page()
+  And I have entered "OTPPIN" in the OTP textbox                                # org.steps.StepDefinitions.i_have_entered_otp_pin_in_password_file(java.lang.String)
+  When I have clicked on OK button                                              # org.steps.StepDefinitions.i_have_clicked_on_ok_button()
+  Then I should redirect to payment status page with status as "Status"         # org.steps.StepDefinitions.the_payment_is_successful(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[[DelegatingClassLoader@2dfaea86] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2dfaea86] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 13562
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 12, 2021 5:20:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[DelegatingClassLoader@2f39aae1] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2f39aae1] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+Apr 12, 2021 5:20:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 89
+[DelegatingClassLoader@241d1052] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@241d1052] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@43445fc6] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@43445fc6] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4fdac2a7] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4fdac2a7] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4cf230bf] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4cf230bf] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@50672905] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@50672905] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@cf984d9] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@cf984d9] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@67e11bda] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@67e11bda] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2976ef56] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2976ef56] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@36665c11] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@36665c11] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@e706aa] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@e706aa] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@edbc2bf] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@edbc2bf] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3d764641] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3d764641] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@7c3c3d67] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@7c3c3d67] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4392362c] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4392362c] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@17053b5] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@17053b5] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@35af52dc] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@35af52dc] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4e10a320] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4e10a320] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@40d10264] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@40d10264] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@40dee07b] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@40dee07b] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@131777e8] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@131777e8] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@612ac38b] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@612ac38b] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@39342614] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@39342614] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@14993306] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@14993306] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@29b5e7db] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@29b5e7db] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@42066f0d] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@42066f0d] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@b144175] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@b144175] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@608b906d] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@608b906d] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3fd9e01c] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3fd9e01c] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@66716959] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@66716959] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3b576ee3] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3b576ee3] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@175bf9c9] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@175bf9c9] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@30b1c5d5] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@30b1c5d5] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@287317df] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@287317df] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1a8b22b5] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1a8b22b5] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4ede8888] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4ede8888] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@5d8e4fa8] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@5d8e4fa8] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1f293cb7] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1f293cb7] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@999cd18] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@999cd18] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4e671ef] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@4e671ef] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1818d00b] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1818d00b] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@60ee7a51] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@60ee7a51] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@48b09105] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@48b09105] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@568ef502] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@568ef502] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3aeb267] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3aeb267] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6c13019c] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6c13019c] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@61d6c8c4] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@61d6c8c4] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6fdaef04] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6fdaef04] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@15bb8ed5] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@15bb8ed5] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2d8c729f] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2d8c729f] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+]]></system-err>
+  </testcase>
+  <testcase name="Order a pillow by selecting credit card as the payment method #2" classname="Buying a Pillow at midtrans" time="1.172">
+    <failure message="The title of the popup is not matching expected:&lt;[Shopping Cart  ]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+]]></failure>
+    <system-out><![CDATA[
+@payment @credit-card
+Scenario Outline: Order a pillow by selecting credit card as the payment method # org/features/BuyPillow.feature:37
+  Given I want to open the midtrans webpage to buy a pillow                     # org.steps.StepDefinitions.i_want_to_open_the_midtrans_webpage_to_buy_a_pillow()
+  When I have clicked on the Buy now button from the home page                  # org.steps.StepDefinitions.i_have_clicked_on_the_buy_now_button_from_the_home_page()
+  Then a shopping cart screen is popped up                                      # org.steps.StepDefinitions.a_shopping_cart_screen_is_popped_up()
+      org.junit.ComparisonFailure: The title of the popup is not matching expected:<[Shopping Cart  ]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at util.BaseUtil.verifyText(BaseUtil.java:57)
+	at org.steps.StepDefinitions.a_shopping_cart_screen_is_popped_up(StepDefinitions.java:28)
+	at ✽.a shopping cart screen is popped up(classpath:org/features/BuyPillow.feature:7)
+
+  Then I have looked into the default amount of pillow                          # org.steps.StepDefinitions.i_have_looked_into_the_default_amount_of_pillow()
+  Then I have looked into Customer details sections                             # org.steps.StepDefinitions.i_have_looked_into_customer_details_sections()
+  And I have entered "Name" in the name textbox                                 # org.steps.StepDefinitions.i_have_entered_name(java.lang.String)
+  And I have entered "Email" in the email textbox                               # org.steps.StepDefinitions.i_have_entered_email(java.lang.String)
+  And I have entered "Phonenumber" in the phonenumber textbox                   # org.steps.StepDefinitions.i_have_entered_phone_no(java.lang.String)
+  And I have entered "City" in the city textbox                                 # org.steps.StepDefinitions.i_have_entered_city(java.lang.String)
+  And I have entered "Address" in the address textbox                           # org.steps.StepDefinitions.i_have_entered_address(java.lang.String)
+  And I hve entered "PostalCode" in the postalcode textbox                      # org.steps.StepDefinitions.i_hve_entered_postal_code(java.lang.String)
+  When I have clicked on Checkout button                                        # org.steps.StepDefinitions.i_have_clicked_on_checkout_button()
+  And I can see a order summary popup                                           # org.steps.StepDefinitions.i_can_see_a_order_summary_popup()
+  Then I can verify the order-id                                                # org.steps.StepDefinitions.i_can_verify_the_order_id()
+  Then I can verify order details                                               # org.steps.StepDefinitions.i_can_verify_order_details()
+  Then I can verify shipping details                                            # org.steps.StepDefinitions.i_can_verify_shipping_details()
+  When I have clicked on Continue button                                        # org.steps.StepDefinitions.i_have_clicked_on_continue_button()
+  Then I can see Select Payment popup                                           # org.steps.StepDefinitions.i_can_see_select_payment_popup()
+  When I have selected Credit/Debit card                                        # org.steps.StepDefinitions.i_have_selected_credit_debit_card()
+  Then I can verify the amount value                                            # org.steps.StepDefinitions.i_can_verify_the_amount_value()
+  Then I can verify the order-id                                                # org.steps.StepDefinitions.i_can_verify_the_order_id()
+  And I have entered "CardNumber" in the cardnumber textbox                     # org.steps.StepDefinitions.i_have_entered_card_number(java.lang.String)
+  And I have entered "ExpiryDate" in the expirydate textbox                     # org.steps.StepDefinitions.i_have_entered_expiry_date(java.lang.String)
+  And I have entered "Cvv" in the cvv textbox                                   # org.steps.StepDefinitions.i_have_entered_cvv_number(java.lang.String)
+  When I have clicked on Pay Now                                                # org.steps.StepDefinitions.i_have_clicked_on_pay_now()
+  Then I was redirected to OTP page                                             # org.steps.StepDefinitions.i_was_redirected_to_otp_page()
+  And I have entered "OTPPIN" in the OTP textbox                                # org.steps.StepDefinitions.i_have_entered_otp_pin_in_password_file(java.lang.String)
+  When I have clicked on OK button                                              # org.steps.StepDefinitions.i_have_clicked_on_ok_button()
+  Then I should redirect to payment status page with status as "Status"         # org.steps.StepDefinitions.the_payment_is_successful(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[[DelegatingClassLoader@1b7a4930] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1b7a4930] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6081f330] error at io/qameta/allure/aspects/StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6081f330] error at io/qameta/allure/aspects/AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+]]></system-err>
+  </testcase>
+  <testcase name="TestSuiteRunner" classname="TestSuiteRunner" time="1.28">
+    <error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;4.0.0-beta-2&apos;, revision: &apos;4ec0cfc112&apos;&#10;System info: host: &apos;Udays-Mac-mini&apos;, ip: &apos;192.168.10.114&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;11.2.2&apos;, java.version: &apos;16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, close {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/bf/rgk4mzbn2c9...}, goog:chromeOptions: {debuggerAddress: localhost:55330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'Udays-Mac-mini', ip: '192.168.10.114', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.2.2', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/bf/rgk4mzbn2c9...}, goog:chromeOptions: {debuggerAddress: localhost:55330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at TestSuiteRunner.tearDown(TestSuiteRunner.java:56)
+</error>
+    <system-err><![CDATA[┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://reports.cucumber.io/docs/cucumber-jvm                 │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+]]></system-err>
+  </testcase>
+</testsuite>
